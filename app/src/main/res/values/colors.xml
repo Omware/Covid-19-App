@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#060917</color>
+    <color name="Red">#FD0303</color>
+    <color name="Green">#01BF0A</color>
+    <color name="Orange">#F68C04</color>
+    <color name="casescolor">#07FBD7</color>
+    <color name="todaycasescolor">#FF0151</color>
+
+</resources>

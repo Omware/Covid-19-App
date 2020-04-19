@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Covid-19 Tracker</string>
+    <string name="search">Search</string>
+    <string name="kenya">Kenya</string>
+    <string name="countries">Countries</string>
+    <string name="stay_at_home">Stay Home, Stay Safe!!!</string>
+</resources>
