@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Omware/Covid-19_Tracker/newFeature/app/src/main/res/drawable-v24/coronavirus.png?token=ALJHFIXM3SVWZTNMHMHXYOC6UAV4K" width="350" title="hover text">
+  <img src="https://raw.githubusercontent.com/Omware/Covid-19_Tracker/newFeature/app/src/main/res/drawable-v24/coronavirus.png?token=ALJHFIXM3SVWZTNMHMHXYOC6UAV4K" width="200" title="Virus Image">
 
 </p>
 
@@ -7,7 +7,7 @@
 
 [![CircleCI](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature)
 
-![Alt text](relative/path/to/coronavirus.png?raw=true "Title")
+`Covid-19 Tracker` is a simple android application that displays covid-19 cases worldwide using an API.
 
 ## Contact Information
 * Email: keithomware@gmail.com
