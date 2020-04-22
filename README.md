@@ -1,5 +1,7 @@
-## Author
-Keith Omware
+<p align="center">
+  <img src="/home/keith/AndroidStudioProjects/OtherProjects/app/src/main/res/drawable/covidimage.jpg" width="350" title="hover text">
+
+</p>
 ## Covid-19 Tracker
 
 [![CircleCI](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature)
