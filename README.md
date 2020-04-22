@@ -11,7 +11,7 @@
 
 | Home Screen     | Home Screen(Search) |
 | ---             | ---                 |
-| `Post`          | /departments/new    |
+| <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg">          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg">    |
 
 
 
