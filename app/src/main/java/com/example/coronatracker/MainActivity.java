@@ -102,15 +102,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 if (response.isSuccessful()) {
                     Log.d(TAG, "-------------SUCCESS------------");
-//                    TextView cases = findViewById(R.id.cases);
-//                    TextView deaths = findViewById(R.id.deaths);
-//                    TextView recovered = findViewById(R.id.recovered);
                     ImageView allcases = findViewById(R.id.relative1);
 
                     mresponse = response.body();
-//                    cases.setText(String.valueOf(mresponse.getConfirmed().getValue()));
-//                    deaths.setText(String.valueOf(mresponse.getDeaths().getValue()));
-//                    recovered.setText(String.valueOf(mresponse.getRecovered().getValue()));
                     Picasso.get().load(mresponse.getImage()).into(allcases);
 
                 }
