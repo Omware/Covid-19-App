@@ -2,18 +2,9 @@
 Keith Omware
 ## Covid-19 Tracker
 
-## Requirements
-* Android SDK
-* Android SDK Tools
-* Android Support library
+[![CircleCI](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature)
 
-# Building
-To build, install and run a debug version, run this from the root of the project:
-`./gradlew installRunDebug`
-
-## Technologies Used
-
-* Java
+![Alt text](relative/path/to/coronavirus.png?raw=true "Title")
 
 ## Contact Information
 * Email: keithomware@gmail.com
