@@ -6,8 +6,8 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.TextView;
 
@@ -25,8 +26,6 @@ import com.example.coronatracker.models.cases.CasesModelResponse;
 import com.example.coronatracker.network.Api;
 import com.example.coronatracker.network.casesClient;
 import com.example.coronatracker.network.countriesClient;
-import com.example.coronatracker.ui.SearchActivity;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -38,12 +37,14 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import www.sanju.motiontoast.MotionToast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
-    @BindView(R.id.btnsearch)
-    FloatingActionButton msearch;
+    @BindView(R.id.errorTextView)
+    TextView mErrorTextView;
+    @BindView(R.id.progressBar)
+    ProgressBar mprogressbar;
     public static final String TAG = "MainActivity";
     private CasesModelResponse mresponse;
     private CoronaAdapter mAdapter;
@@ -57,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         ButterKnife.bind(this);
-        msearch.setOnClickListener(this);
 
         getCases();
         getCountries();
@@ -71,24 +71,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         call.enqueue(new Callback<List<DetailsModelResponse>>() {
             @Override
             public void onResponse(Call<List<DetailsModelResponse>> call, Response<List<DetailsModelResponse>> response) {
+                mprogressbar.setVisibility(View.GONE);
                 if (response.isSuccessful()) {
-
                     Log.d("qwerty", "-------------countries passed---------------");
 
-                    mDetailsModelResponseList = response.body();
-                    mAdapter = new CoronaAdapter(MainActivity.this, mDetailsModelResponseList);
-                    mRecyclerView.setAdapter(mAdapter);
-                    RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
-                    mRecyclerView.setLayoutManager(layoutManager);
-                    mRecyclerView.setHasFixedSize(true);
+                    if (response.body().size() == 0) {
+
+                        MotionToast.Companion.darkToast((Activity) MainActivity.this, "Data not Available. Please try again later",
+                                MotionToast.Companion.getTOAST_WARNING(),
+                                MotionToast.Companion.getGRAVITY_BOTTOM(),
+                                MotionToast.Companion.getLONG_DURATION(),
+                                ResourcesCompat.getFont(MainActivity.this, R.font.helvetica_regular));
+                    } else {
+                        mDetailsModelResponseList = response.body();
+                        mAdapter = new CoronaAdapter(MainActivity.this, mDetailsModelResponseList);
+                        mRecyclerView.setAdapter(mAdapter);
+                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+                        mRecyclerView.setLayoutManager(layoutManager);
+                        mRecyclerView.setHasFixedSize(true);
+                    }
                 }
             }
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onFailure(Call<List<DetailsModelResponse>> call, Throwable t) {
                 Log.d("Fail", t.getMessage());
-                Log.d("qwerty", "-------------countries failed---------------");
-
+                mprogressbar.setVisibility(View.GONE);
+                mErrorTextView.setVisibility(View.VISIBLE);
+                mErrorTextView.setText("Something went wrong, please try again later");
             }
         });
     }
@@ -105,10 +116,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (response.isSuccessful()) {
                     Log.d(TAG, "-------------SUCCESS------------");
                     ImageView allcases = findViewById(R.id.relative1);
-
                     mresponse = response.body();
                     Picasso.get().load(mresponse.getImage()).into(allcases);
-
                 }
             }
 
@@ -116,9 +125,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onFailure(Call<CasesModelResponse> call, Throwable t) {
 
                 Log.d(TAG, "-------------FAILED------------");
+
             }
         });
-
     }
 
     @Override
@@ -151,29 +160,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return true;
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-////        switch (item.getItemId()) {
-////            case R.id.action_settings:
-////                MotionToast.Companion.darkToast((Activity) MainActivity.this, "Settings Coming Soon",
-////                        MotionToast.Companion.getTOAST_INFO(),
-////                        MotionToast.Companion.getGRAVITY_BOTTOM(),
-////                        MotionToast.Companion.getLONG_DURATION(),
-////                        ResourcesCompat.getFont(this, R.font.helvetica_regular));
-////                return true;
-////
-////            default:
-////                return super.onOptionsItemSelected(item);
-////        }
-//    }
-
-    @Override
-    public void onClick(View v) {
-
-        if (v == msearch) {
-            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-            startActivity(intent);
-        }
-    }
 }

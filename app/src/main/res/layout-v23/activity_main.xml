@@ -15,8 +15,8 @@
         android:layout_alignParentTop="true"
         android:background="#21242b"
         android:elevation="4dp"
-        app:theme="@style/AppTheme.Toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:theme="@style/AppTheme.Toolbar"
         app:titleTextColor="@android:color/white">
 
         <TextView
@@ -51,18 +51,6 @@
         android:textColor="@android:color/white"
         android:textSize="25sp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnsearch"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/countries"
-        android:layout_alignEnd="@+id/rvp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/ic_search"
-        android:text="SIGN UP"
-        android:textColor="@android:color/white" />
-
     <RelativeLayout
         android:id="@+id/rvp"
         android:layout_width="match_parent"
@@ -71,22 +59,41 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/card">
 
-
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progressBar"
+            style="@style/SpinKitView.DoubleBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginBottom="192dp"
+            app:SpinKit_Color="@android:color/white" />
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:scrollbars="vertical"
-        android:scrollIndicators="right"
-        android:scrollbarStyle="outsideOverlay"
-        android:scrollbarThumbVertical="@drawable/scrollbar"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:scrollbarSize="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/countries"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollIndicators="right"
+        android:scrollbarSize="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbars="vertical"
         android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:layout_marginTop="190dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
 
 </RelativeLayout>
