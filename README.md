@@ -5,7 +5,7 @@
 
 ## Covid-19 Tracker
 
-[![CircleCI](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19_Tracker/tree/newFeature) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Omware/Covid-19_Tracker/blob/master/LICENSE) <a href="https://codeclimate.com/github/Omware/Covid-19_Tracker/maintainability"><img src="https://api.codeclimate.com/v1/badges/d64a8b2d2bc134775d28/maintainability" /></a>
+[![CircleCI](https://circleci.com/gh/Omware/Covid-19_Tracker.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19_Tracker) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Omware/Covid-19_Tracker/blob/master/LICENSE) <a href="https://codeclimate.com/github/Omware/Covid-19_Tracker/maintainability"><img src="https://api.codeclimate.com/v1/badges/d64a8b2d2bc134775d28/maintainability" /></a>
 
 `Covid-19 Tracker` is a simple android application that displays covid-19 cases worldwide using an API.
 
