@@ -14,7 +14,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.example.coronatracker.adapters.CoronaAdapter;
@@ -123,25 +125,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
+
+        MenuItem searchitem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) searchitem.getActionView();
+        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+
+        searchView.setOnCloseListener(() -> {
+            mAdapter.getFilter().filter("");
+            getCountries();
+            return false;
+        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                mAdapter.getFilter().filter(newText);
+                mRecyclerView.scrollToPosition(0);
+                return false;
+            }
+        });
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.action_settings:
-                MotionToast.Companion.darkToast((Activity) MainActivity.this, "Settings Coming Soon",
-                        MotionToast.Companion.getTOAST_INFO(),
-                        MotionToast.Companion.getGRAVITY_BOTTOM(),
-                        MotionToast.Companion.getLONG_DURATION(),
-                        ResourcesCompat.getFont(this, R.font.helvetica_regular));
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+////        switch (item.getItemId()) {
+////            case R.id.action_settings:
+////                MotionToast.Companion.darkToast((Activity) MainActivity.this, "Settings Coming Soon",
+////                        MotionToast.Companion.getTOAST_INFO(),
+////                        MotionToast.Companion.getGRAVITY_BOTTOM(),
+////                        MotionToast.Companion.getLONG_DURATION(),
+////                        ResourcesCompat.getFont(this, R.font.helvetica_regular));
+////                return true;
+////
+////            default:
+////                return super.onOptionsItemSelected(item);
+////        }
+//    }
 
     @Override
     public void onClick(View v) {

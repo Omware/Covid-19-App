@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:background="#21242b"
         android:elevation="4dp"
-        android:theme="@style/MyOverflowButtonStyle"
+        android:theme="@style/AppTheme.Toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:titleTextColor="@android:color/white">
 
