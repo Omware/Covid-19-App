@@ -9,10 +9,23 @@
 
 `Covid-19 Tracker` is a simple android application that displays covid-19 cases worldwide using an API.
 
-## Built with
-* <a href="https://www.java.com/en/">Java</a> -
-* <a href="https://square.github.io/retrofit/">Retrofit</a>
-* <a href="https://developer.android.com/studio">Android Studio</a>
+| Home Screen     | Home Screen(Search) |
+| ---             | ---                 |
+| `Post`          | /departments/new    |
+
+
+
+## Built With
+
+* <a href="https://www.java.com/en/">Java</a> - Programming language for Android.
+* <a href="https://square.github.io/retrofit/">Retrofit</a> - Is a REST Client for Java and Android.
+* <a href="https://developer.android.com/studio">Android Studio</a> - Is an Integrated Development Environment (IDE) for Android app development.
+
+
+## Credits
+
+I want to thank <a href="https://corona.lmao.ninja/docs/">NOVELCOVID19API Team</a> and <a href="https://covid19.mathdro.id/api">covid19.mathdro.id/api
+</a> for the well documented and open-source API.
 
 ## Contact Information
 
