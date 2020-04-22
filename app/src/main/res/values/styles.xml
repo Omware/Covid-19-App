@@ -6,12 +6,14 @@
         <item name="colorPrimary">#323233</item>
         <item name="colorPrimaryDark">#39383A</item>
         <item name="colorAccent">#060917</item>
-        <item name="android:navigationBarColor">#090e1c</item>
+        <item name="android:navigationBarColor">#060912</item>
 
     </style>
 
-    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
-        <item name="android:tint">#FFFFFF</item>
+    <style name="AppTheme.Toolbar" parent="AppTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
     </style>
+
 
 </resources>

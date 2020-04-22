@@ -33,12 +33,6 @@ public class DetailsModelResponse {
     @SerializedName("critical")
     @Expose
     private Integer critical;
-    //    @SerializedName("casesPerOneMillion")
-//    @Expose
-//    private Integer casesPerOneMillion;
-//    @SerializedName("deathsPerOneMillion")
-//    @Expose
-//    private Integer deathsPerOneMillion;
     @SerializedName("updated")
     @Expose
     private Long updated;
@@ -74,8 +68,6 @@ public class DetailsModelResponse {
         this.recovered = recovered;
         this.active = active;
         this.critical = critical;
-//        this.casesPerOneMillion = casesPerOneMillion;
-//        this.deathsPerOneMillion = deathsPerOneMillion;
         this.updated = updated;
     }
 
@@ -150,22 +142,6 @@ public class DetailsModelResponse {
     public void setCritical(Integer critical) {
         this.critical = critical;
     }
-
-//    public Integer getCasesPerOneMillion() {
-//        return casesPerOneMillion;
-//    }
-//
-//    public void setCasesPerOneMillion(Integer casesPerOneMillion) {
-//        this.casesPerOneMillion = casesPerOneMillion;
-//    }
-
-//    public Integer getDeathsPerOneMillion() {
-//        return deathsPerOneMillion;
-//    }
-//
-//    public void setDeathsPerOneMillion(Integer deathsPerOneMillion) {
-//        this.deathsPerOneMillion = deathsPerOneMillion;
-//    }
 
     public Long getUpdated() {
         return updated;
