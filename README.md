@@ -25,11 +25,12 @@
 ## Credits
 
 I want to thank <a href="https://corona.lmao.ninja/docs/">NOVELCOVID19API Team</a> and <a href="https://covid19.mathdro.id/api">covid19.mathdro.id/api
-</a> for the well documented and open-source API.
+</a> for the well documented and open-source APIs.
 
 ## Contact Information
 
-* Email: keithomware@gmail.com
+You can contact me using my email: keithomware@gmail.com or visit my <a href="https://keithomware.netlify.app/">website</a>
+
 ## Licence
 
 MIT License
