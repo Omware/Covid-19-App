@@ -13,7 +13,8 @@
 | ---             | ---                 |
 | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg" width = 320>          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg" width = 320>    |
 
-
+You can download the application below :point_down:
+[![Covid-19 Tracker](https://img.shields.io/badge/APK-Covid--19%20Tracker-blue)](https://github.com/Omware/Covid-19_Tracker/files/4521187/app-debug.zip)
 
 ## Built With
 
@@ -33,7 +34,7 @@ You can contact me using my email: keithomware@gmail.com or visit my <a href="ht
 
 ## Licence
 
-MIT License
+`MIT License
 
 Copyright (c) [2020] [Keith Omware]
 
@@ -53,4 +54,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.`
