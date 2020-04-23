@@ -14,8 +14,7 @@
 | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg" width = 320>          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg" width = 320>    |
 
 You can download the application below :point_down:
-[![Covid-19 Tracker](https://img.shields.io/badge/APK-Covid--19%20Tracker-blue)](https://github.com/Omware/Covid-19_Tracker/files/4521187/app-debug.zip)
-
+<a href="https://github.com/Omware/Covid-19_Tracker/files/4521187/app-debug.zip">https://img.shields.io/badge/APK-Covid--19%20Tracker-blue</a>
 ## Built With
 
 * <a href="https://www.java.com/en/">Java</a> - Programming language for Android.
