@@ -15,7 +15,8 @@
 
 You can download the application below :point_down:
 
-[![Generic badge](https://img.shields.io/badge/APK-Covid--19%20Tracker-blue)](https://github.com/Omware/Covid-19_Tracker/files/4521187/app-debug.zip)
+Click <a href="https://github.com/Omware/Covid-19_Tracker/files/4521187/app-debug.zip">`here`</a> to download.
+
 ## Built With
 
 * <a href="https://www.java.com/en/">Java</a> - Programming language for Android.
@@ -34,7 +35,8 @@ You can contact me using my email: keithomware@gmail.com or visit my <a href="ht
 
 ## Licence
 
-`MIT License
+```
+MIT License
 
 Copyright (c) [2020] [Keith Omware]
 
@@ -54,4 +56,5 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.`
+SOFTWARE.
+```
