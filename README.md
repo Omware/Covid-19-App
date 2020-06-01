@@ -11,7 +11,7 @@
 
 | Home Screen     | Home Screen(Search) |
 | ---             | ---                 |
-| <img src="https://github.com/Omware/Covid-19-App/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg" width = 320>          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg" width = 320>    |
+| <img src="https://github.com/Omware/Covid-19-App/blob/newFeature/homeupdated.png" width = 320>          | <img src="https://github.com/Omware/Covid-19-App/blob/newFeature/home2updated.png" width = 320>    |
 
 Click <a href="https://github.com/Omware/Covid-19-App/files/4711107/app-debug.zip">`here`</a> to download the application :iphone:
 
