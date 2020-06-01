@@ -152,6 +152,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                if(newText.isEmpty()) {
+                    getCountries();
+                }
                 mAdapter.getFilter().filter(newText);
                 mRecyclerView.scrollToPosition(0);
                 return false;

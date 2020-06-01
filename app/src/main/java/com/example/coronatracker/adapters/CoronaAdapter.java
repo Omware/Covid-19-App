@@ -120,6 +120,7 @@ public class CoronaAdapter extends RecyclerView.Adapter<CoronaAdapter.ViewHolder
             mcases.setText(String.valueOf(casesModelResponse.getCases()));
             mdeaths.setText(String.valueOf(casesModelResponse.getDeaths()));
             mrecovered.setText(String.valueOf(casesModelResponse.getRecovered()));
+            mcountryname.setSelected(true);
 
 
         }
