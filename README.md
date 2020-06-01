@@ -13,7 +13,7 @@
 | ---             | ---                 |
 | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg" width = 320>          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg" width = 320>    |
 
-Click <a href="https://github.com/Omware/Covid-19_Tracker/files/4710731/app-debug.zip">`here`</a> to download the application :iphone:
+Click <a href="https://github.com/Omware/Covid-19-App/files/4710794/apk.zip">`here`</a> to download the application :iphone:
 
 ## Built With
 
