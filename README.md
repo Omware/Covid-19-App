@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/coronavirus.png" width="200" title="Virus Image">
+  <img src="https://github.com/Omware/Covid-19-App/blob/newFeature/app/src/main/res/drawable-v24/coronavirus.png" width="200" title="Virus Image">
 
 </p>
 
-## Covid-19 Tracker
+## Covid-19 App
 
 [![CircleCI](https://circleci.com/gh/Omware/Covid-19_Tracker.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19_Tracker) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Omware/Covid-19_Tracker/blob/master/LICENSE) <a href="https://codeclimate.com/github/Omware/Covid-19_Tracker/maintainability"><img src="https://api.codeclimate.com/v1/badges/d64a8b2d2bc134775d28/maintainability" /></a>
 
-`Covid-19 Tracker` is a simple android application that displays covid-19 cases worldwide using an API.
+`Covid-19 App` is a simple android application that displays covid-19 cases worldwide using 2 APIs.
 
 | Home Screen     | Home Screen(Search) |
 | ---             | ---                 |
-| <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg" width = 320>          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg" width = 320>    |
+| <img src="https://github.com/Omware/Covid-19-App/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg" width = 320>          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg" width = 320>    |
 
-Click <a href="https://github.com/Omware/Covid-19-App/files/4710794/apk.zip">`here`</a> to download the application :iphone:
+Click <a href="https://github.com/Omware/Covid-19-App/files/4711107/app-debug.zip">`here`</a> to download the application :iphone:
 
 ## Built With
 
@@ -24,7 +24,7 @@ Click <a href="https://github.com/Omware/Covid-19-App/files/4710794/apk.zip">`he
 
 ## Credits
 
-I want to thank <a href="https://corona.lmao.ninja/docs/">NOVELCOVID19API Team</a> and <a href="https://covid19.mathdro.id/api">covid19.mathdro.id/api
+I want to thank <a href="https://corona.lmao.ninja/docs/">NOVELCOVID19API</a> and <a href="https://covid19.mathdro.id/api">covid19.mathdro.id/api
 </a> for the well documented and open-source APIs.
 
 ## Contact Information
