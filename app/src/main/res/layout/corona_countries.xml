@@ -30,18 +30,19 @@
 
             <TextView
                 android:id="@+id/countryname"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="13dp"
-                android:ellipsize="end"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:freezesText="true"
+                android:scrollHorizontally="true"
                 android:fontFamily="@font/andika"
                 android:marqueeRepeatLimit="marquee_forever"
-                android:maxLength="12"
-                android:maxLines="1"
                 android:text="@string/kenya"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
+                android:textSize="24sp"
                 app:layout_constraintStart_toEndOf="@+id/countryflag"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/andika"
                 android:text="22"
                 android:textColor="@color/todaycasescolor"
