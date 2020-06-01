@@ -5,7 +5,7 @@
 
 ## Covid-19 App
 
-[![CircleCI](https://circleci.com/gh/Omware/Covid-19-App.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19-App) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Omware/Covid-19App/blob/master/LICENSE) <a href="https://codeclimate.com/github/Omware/Covid-19_Tracker/maintainability"><img src="https://api.codeclimate.com/v1/badges/d64a8b2d2bc134775d28/maintainability" /></a>
+[![CircleCI](https://circleci.com/gh/Omware/Covid-19-App.svg?style=svg)](https://circleci.com/gh/Omware/Covid-19-App) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Omware/Covid-19-App/blob/master/LICENSE) <a href="https://codeclimate.com/github/Omware/Covid-19_Tracker/maintainability"><img src="https://api.codeclimate.com/v1/badges/d64a8b2d2bc134775d28/maintainability" /></a>
 
 `Covid-19 App` is a simple android application that displays covid-19 cases worldwide using 2 APIs.
 
