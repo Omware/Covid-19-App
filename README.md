@@ -13,7 +13,7 @@
 | ---             | ---                 |
 | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home1.jpg" width = 320>          | <img src="https://github.com/Omware/Covid-19_Tracker/blob/newFeature/app/src/main/res/drawable-v24/home2.jpg" width = 320>    |
 
-Click <a href="https://github.com/Omware/Covid-19_Tracker/files/4521187/app-debug.zip">`here`</a> to download the application :iphone:
+Click <a href="https://github.com/Omware/Covid-19_Tracker/files/4710731/app-debug.zip">`here`</a> to download the application :iphone:
 
 ## Built With
 
@@ -36,7 +36,7 @@ You can contact me using my email: keithomware@gmail.com or visit my <a href="ht
 ```
 MIT License
 
-Copyright (c) [2020] [Keith Omware]
+Copyright (c) 2020 Keith Omware
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -29,6 +29,7 @@ import com.example.coronatracker.network.countriesClient;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onFailure(Call<List<DetailsModelResponse>> call, Throwable t) {
-                Log.d("Fail", t.getMessage());
+                Log.d("Fail", Objects.requireNonNull(t.getMessage()));
                 mprogressbar.setVisibility(View.GONE);
                 mErrorTextView.setVisibility(View.VISIBLE);
                 mErrorTextView.setText("Something went wrong, please try again later");
@@ -139,11 +140,6 @@ public class MainActivity extends AppCompatActivity {
         SearchView searchView = (SearchView) searchitem.getActionView();
         searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
 
-        searchView.setOnCloseListener(() -> {
-            mAdapter.getFilter().filter("");
-            getCountries();
-            return false;
-        });
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
