@@ -24,7 +24,7 @@ Click <a href="https://github.com/Omware/Covid-19-App/files/4711107/app-debug.zi
 
 ## Credits
 
-I want to thank <a href="https://corona.lmao.ninja/docs/">NOVELCOVID19API</a> and <a href="https://covid19.mathdro.id/api">covid19.mathdro.id/api
+I want to thank <a href="https://corona.lmao.ninja/">NOVELCOVID19API</a> and <a href="https://covid19.mathdro.id/api">covid19.mathdro.id/api
 </a> for the well documented and open-source APIs.
 
 ## Contact Information
